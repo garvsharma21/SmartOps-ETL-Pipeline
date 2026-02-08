@@ -10,6 +10,3 @@ def run_pipeline():
     data = extract_data(os.getenv("SOURCE-FILE-PATH"))
     data = transform_data(data)
     load_data(data, os.getenv("SINK-FILE-PATH"))
-
-if __name__ == "__main__":
-    run_pipeline()
